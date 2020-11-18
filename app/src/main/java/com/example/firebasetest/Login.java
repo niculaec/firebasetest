@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 if (!(TextUtils.isEmpty(email.getText().toString())
                         && TextUtils.isEmpty(password.getText().toString()))) {
-                    fauth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
+                    fauth.signInWithEmailAndPassword (email.getText().toString(), password.getText().toString())
                             .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                                 @Override
                                 public void onSuccess(AuthResult authResult) {
