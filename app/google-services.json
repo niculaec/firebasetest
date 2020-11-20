@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "505245517173",
-    "firebase_url": "https://fir-test-cc2ee.firebaseio.com",
-    "project_id": "fir-test-cc2ee",
-    "storage_bucket": "fir-test-cc2ee.appspot.com"
+    "project_number": "194748949272",
+    "firebase_url": "https://restaurantreviewer-7f844.firebaseio.com",
+    "project_id": "restaurantreviewer-7f844",
+    "storage_bucket": "restaurantreviewer-7f844.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:505245517173:android:3dd2caf3a3db5fea717f3c",
+        "mobilesdk_app_id": "1:194748949272:android:7d8ef682a3a23a9716b46d",
         "android_client_info": {
           "package_name": "com.example.firebasetest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "505245517173-ealds0jgcvg9f49qt9stjv8b45comk77.apps.googleusercontent.com",
+          "client_id": "194748949272-td43k08o8o38huj0u0der5fv1srg1hur.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasetest",
+            "certificate_hash": "e0a9785da0d3c70a0659fc353b03ce4e9f500005"
+          }
+        },
+        {
+          "client_id": "194748949272-v4lf6b9ppbc460atr51mcd6bg5s2n38d.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB9PLFR-Ow8xLcZ1Y_jH06l5JFpt094Gas"
+          "current_key": "AIzaSyDhSFQ9yOEMPcDvp0OdBDPvUtKNl7HUwaE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "505245517173-ealds0jgcvg9f49qt9stjv8b45comk77.apps.googleusercontent.com",
+              "client_id": "194748949272-v4lf6b9ppbc460atr51mcd6bg5s2n38d.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
