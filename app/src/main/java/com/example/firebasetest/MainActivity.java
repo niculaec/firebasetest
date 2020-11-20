@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     FirebaseAuth fauth;
 
     private DatabaseReference mDatabase;
+    private DatabaseReference users;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +41,12 @@ public class MainActivity extends AppCompatActivity {
         fauth = FirebaseAuth.getInstance();
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
+        users = mDatabase.child("users");
     }
 
     public void createUser(View view) {
         UserProfile user = new UserProfile("Harcea Parcea", "parcea@hareca.com","hahaha");
-        mDatabase.child("users").child(user.getId()).setValue(user);
+        users.child(user.getId()).setValue(user);
         //                .addOnFailureListener(new OnFailureListener() {
 //                    @Override
 //                    public void onFailure(@NonNull Exception e) {
@@ -78,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void readUser(View view) {
 
-        mDatabase.child("users").child("parcea@harecacom").addValueEventListener(new ValueEventListener() {
+        users.child("parcea@harecacom").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserProfile userProfile = snapshot.getValue(UserProfile.class);
@@ -93,6 +95,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void updateUser(View view) {
-        mDatabase.child("users").child("parcea@harecacom").child("email").setValue("altemail@undomeniu.com");
+        users.child("parcea@harecacom").child("email").setValue("altemail@undomeniu.com");
     }
 }
