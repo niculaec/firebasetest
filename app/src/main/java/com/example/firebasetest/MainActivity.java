@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         createUserButton = findViewById(R.id.createUserButton);
         readUserButton = findViewById(R.id.readUserButton);
         updateUserButton = findViewById(R.id.updateUserButton);
-        usersAccess = ((TestApplication) getApplication()).getUsersAccess();
+        usersAccess = UsersAccess.getInstance();
     }
 
     public void createUser(View view) {

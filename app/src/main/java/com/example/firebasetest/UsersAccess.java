@@ -13,10 +13,20 @@ import com.google.firebase.database.ValueEventListener;
 
 public class UsersAccess {
 
+    private static UsersAccess instance = null;
+
+    public synchronized static UsersAccess getInstance() {
+        if(instance == null){
+            instance = new UsersAccess();
+        }
+
+        return instance;
+    }
+
     private DatabaseReference mDatabase;
     private DatabaseReference users;
 
-    public UsersAccess(){
+    private UsersAccess(){
         mDatabase = FirebaseDatabase.getInstance().getReference();
         users = mDatabase.child("users");
     }
